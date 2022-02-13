@@ -1,5 +1,13 @@
-.JS_color, .HTML_color{
+img {
+    width: 500px
+}
+
+.JS_color, .HTML_color {
     color: red;
     font-size: 25px;
     border: 1px solid blue
+}
+
+hr {
+    border-color: lawngreen;
 }
