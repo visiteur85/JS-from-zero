@@ -11,3 +11,16 @@ img {
 hr {
     border-color: lawngreen;
 }
+
+.homework {
+    color: red;
+    font-size: 32px;
+    text-align: center;
+}
+.formForRegistration {
+    border: 1px solid cornflowerblue;
+    background-color: bisque;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}

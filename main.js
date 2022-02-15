@@ -30,4 +30,32 @@ const headerId = document.getElementById("header");
 console.log(headerId.id)
 console.log(headerId.className)
 
+//Homework
+
+const lastname = document.getElementById("lastName");
+console.log(lastname.value);
+
+const adress = document.getElementById("adress");
+console.log(adress.value)
+
+const cities = document.getElementById("cities")
+console.log(cities.value)
+
+const hobbies = document.getElementById("hobbies");
+console.log(hobbies.value)
+
+const justDiv = document.getElementById("justDiv");
+console.log(justDiv.innerHTML)
+
+console.log(cities.value)
+
+
+const sadff = () => {
+     const wqerwqerqwer = document.getElementById("vvvvv")
+    alert(wqerwqerqwer.value)
+
+}
+const firstButton = document.getElementById("firstButton");
+ firstButton.addEventListener("click",sadff )
+
 
