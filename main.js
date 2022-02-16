@@ -51,11 +51,30 @@ console.log(cities.value)
 
 
 const sadff = () => {
-     const wqerwqerqwer = document.getElementById("vvvvv")
+    const wqerwqerqwer = document.getElementById("vvvvv")
     alert(wqerwqerqwer.value)
 
 }
 const firstButton = document.getElementById("firstButton");
- firstButton.addEventListener("click",sadff )
+firstButton.addEventListener("click", sadff);
+firstButton.className = "buttonStyle"
+
+//less 09
+let inputLes9 = document.getElementById("inputLes9");
+inputLes9.value = "Inter";
+inputLes9.className = "inputLes9_green";
+
+inputLes9.setAttribute("value", "MU");
+
+const ferrari = document.getElementById("ferrari");
+ferrari.src = "https://ferrari-avilon.ru/images/Monza-SP2_1-osn.jpg"
+ferrari.title = "My car";
+
+
+// const divHomework = document.getElementById("divHomework");
+// divHomework.innerHTML = "<ol> <li></li> <li></li> <li></li> <li></li> <li></li></ol>"
+
+
+
 
 

@@ -24,3 +24,19 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
+
+.inputLes9_red {
+color: red
+}
+
+.inputLes9_green {
+    color: green
+}
+
+.buttonStyle {
+    background-color: yellow;
+    border: 1px solid red;
+    padding: 10px;
+    transform: rotate(45deg);
+
+}
