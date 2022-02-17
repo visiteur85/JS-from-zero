@@ -1,28 +1,25 @@
-// less01
-// setInterval(function () {
-//     const message = document.getElementById("message");
-//     console.log(message.value)
-// }, 4000)
+//less01
+
 
 //less06
 // window.alert("Hey");
-// window.alert("Bye")
+// window.alert("Bye");
 
 //les07
 
-let str1;
-str1 = "number1";
+// let str1;
+// str1 = "number1";
 // window.alert(str1)
 
 let wordCat;
 wordCat = "cat";
 
-let translateOfCat = "Кот"
+// let translateOfCat = "Кот";
 // window.alert(wordCat);
 // window.alert(translateOfCat)
 
 //les08
-
+//
 const helloMessElement = document.getElementById("hello-message");
 console.log(helloMessElement.value)
 
@@ -45,36 +42,63 @@ const hobbies = document.getElementById("hobbies");
 console.log(hobbies.value)
 
 const justDiv = document.getElementById("justDiv");
-console.log(justDiv.innerHTML)
+console.log(justDiv.innerHTML);
 
-console.log(cities.value)
+console.log(cities.value);
 
 
-const sadff = () => {
-    const wqerwqerqwer = document.getElementById("vvvvv")
-    alert(wqerwqerqwer.value)
 
-}
-const firstButton = document.getElementById("firstButton");
-firstButton.addEventListener("click", sadff);
-firstButton.className = "buttonStyle"
+
 
 //less 09
-let inputLes9 = document.getElementById("inputLes9");
-inputLes9.value = "Inter";
-inputLes9.className = "inputLes9_green";
+// let inputLes9 = document.getElementById("inputLes9");
+// inputLes9.value = "Inter";
+// inputLes9.className = "inputLes9_green";
+//
+// inputLes9.setAttribute("value", "MU");
+//
+// const ferrari = document.getElementById("ferrari");
+// ferrari.src = "https://ferrari-avilon.ru/images/Monza-SP2_1-osn.jpg"
+// ferrari.title = "My car";
 
-inputLes9.setAttribute("value", "MU");
-
-const ferrari = document.getElementById("ferrari");
-ferrari.src = "https://ferrari-avilon.ru/images/Monza-SP2_1-osn.jpg"
-ferrari.title = "My car";
-
-
+//
 // const divHomework = document.getElementById("divHomework");
 // divHomework.innerHTML = "<ol> <li></li> <li></li> <li></li> <li></li> <li></li></ol>"
 
 
 
+setTimeout(function(){
 
+    let inputHW2 = document.getElementById("inputHW2");
+    inputHW2.value = "Sasha";
+
+    let input2HW2 = document.getElementById("input2HW2");
+    input2HW2.value = "ivanov"
+
+    let input3HW2 = document.getElementById("input3HW2");
+    input3HW2.checked = false
+
+
+
+    let selHW2 = document.getElementById("selHW2");
+    selHW2.value = "kiev";
+
+    let texHW2 = document.getElementById("texHW2");
+    texHW2.value = "i am bad man";
+}, 1000);
+
+let labels = document.getElementsByClassName("some-class-name");
+console.log(labels)
+
+labels[0].value = "sadfasdfsadf";
+
+
+const changeIMG = () => {
+  
+    let imgHW2 = document.getElementById("img1HW2");
+    imgHW2.src = "https://klike.net/uploads/posts/2020-02/1582010541_13.jpg";
+
+};
+let buttonHW2 = document.getElementById("buttonHW2");
+buttonHW2.addEventListener("click", changeIMG);
 
