@@ -69,8 +69,7 @@ console.log(cities.value);
 
 setTimeout(function(){
 
-    let inputHW2 = document.getElementById("inputHW2");
-    inputHW2.value = "Sasha";
+
 
     let input2HW2 = document.getElementById("input2HW2");
     input2HW2.value = "ivanov"
@@ -90,7 +89,7 @@ setTimeout(function(){
 let labels = document.getElementsByClassName("some-class-name");
 console.log(labels)
 
-labels[0].value = "sadfasdfsadf";
+// labels[0].value = "sadfasdfsadf";
 
 
 const changeIMG = () => {
@@ -101,4 +100,19 @@ const changeIMG = () => {
 };
 let buttonHW2 = document.getElementById("buttonHW2");
 buttonHW2.addEventListener("click", changeIMG);
+
+
+let inputHW2 = document.getElementById("inputHW2");
+inputHW2.value = "Sasha";
+//les11
+
+ const alertMe = () => {
+     console.log(inputHW2.value);
+     console.log(inputHW2.value);
+     debugger
+     console.log(inputHW2.value);
+ }
+
+ alertMe()
+
 
