@@ -32,8 +32,7 @@ console.log(headerId.className)
 const lastname = document.getElementById("lastName");
 console.log(lastname.value);
 
-const adress = document.getElementById("adress");
-console.log(adress.value)
+
 
 const cities = document.getElementById("cities")
 console.log(cities.value)
@@ -93,7 +92,7 @@ console.log(labels)
 
 
 const changeIMG = () => {
-  
+
     let imgHW2 = document.getElementById("img1HW2");
     imgHW2.src = "https://klike.net/uploads/posts/2020-02/1582010541_13.jpg";
 
@@ -113,6 +112,18 @@ inputHW2.value = "Sasha";
      console.log(inputHW2.value);
  }
 
- alertMe()
+//12
 
+const lastname = document.getElementById("lastName");
+console.log(lastname.value);
 
+const adress = document.getElementById("adress");
+console.log(adress.value)
+
+const foParametrs = (id) => {
+const differentValue = document.getElementById(id);
+    console.log(differentValue.value)
+  
+}
+foParametrs("lastName");
+foParametrs("adress");
