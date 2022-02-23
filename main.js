@@ -168,11 +168,72 @@
 // //  let foo = logValue("input2HW2")
 // // alert(foo)
 // //
-const getEl = (id) => {
-    console.log("he")
-    let el = document.getElementById(id)
-    return el;
+// const getEl = (id) => {
+//     console.log("he")
+//     let el = document.getElementById(id)
+//     return el;
+//
+// }
+// // let v = getEl("input2HW2").value;
+// // alert(v)
 
+// const street = () => {
+//     let clock = "Область видимости";
+//
+//     const bulding = () => {
+//
+//         const office = () => {
+//             alert(clock)
+//
+//         }
+//         office()
+//
+//     }
+//     bulding()
+//
+// }
+// street()()();
+
+// let value = 2;
+//
+// function show() {
+//     console.log("value from show " + value);}
+//
+// function wrapper() {
+//         let value = 3;
+//         console.log("value from wrapper" + value);
+//         show()
+//
+//     }
+//
+//     wrapper()
+//
+// const f = () => {
+//     alert(aa)
+//
+//     const f2 = () => {
+//       const f3 = () => {
+//           let aa = "область видимости";
+//       }
+//       f3()
+//     }
+//   f2()
+// }
+//
+// f()
+
+const addErrorClass = (elId) => {
+    let el = document.getElementById(elId);
+    el.className = "error-input"
 }
-let v = getEl("input2HW2").value;
-alert(v)
+
+const addErrorClasstoAll = () => {
+    addErrorClass("firstName");
+    addErrorClass("lasttName");
+    addErrorClass("adresss");
+}
+
+// window.setTimeout(addErrorClasstoAll, 2000)
+
+let buttonn = document.getElementById("send-button")
+buttonn.addEventListener("click", addErrorClasstoAll)
