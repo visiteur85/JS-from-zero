@@ -222,18 +222,60 @@
 //
 // f()
 
-const addErrorClass = (elId) => {
-    let el = document.getElementById(elId);
-    el.className = "error-input"
-}
+// const addErrorClass = (elId) => {
+//     let el = document.getElementById(elId);
+//     el.className = "error-input"
+// }
+//
+// const addErrorClasstoAll = () => {
+//     addErrorClass("firstName");
+//     addErrorClass("lasttName");
+//     addErrorClass("adresss");
+// }
+//
+// // window.setTimeout(addErrorClasstoAll, 2000)
+//
+// let buttonn = document.getElementById("send-button")
+// buttonn.addEventListener("click", addErrorClasstoAll)
 
-const addErrorClasstoAll = () => {
-    addErrorClass("firstName");
-    addErrorClass("lasttName");
-    addErrorClass("adresss");
-}
+//les 15
 
-// window.setTimeout(addErrorClasstoAll, 2000)
+let buttonPlus = document.getElementById("buttonPlus");
+let buttonMinus = document.getElementById("buttonMinus");
+let buttonMultiply = document.getElementById("buttonMultiply");
+let buttonDevide = document.getElementById("buttonDevide");
 
-let buttonn = document.getElementById("send-button")
-buttonn.addEventListener("click", addErrorClasstoAll)
+let input1 = document.getElementById("number1");
+let input2 = document.getElementById("number2");
+
+let number1 = +input1.value;
+let number2 = +input2.value;
+
+const onButtonPlus = () => {
+
+    let sum = number1 + number2;
+    alert(sum);
+
+};
+
+
+const onButtonMinus = () => {
+
+    let minus = number1 - number2;
+    alert(minus);
+};
+const onbuttonMultiply = () => {
+
+    let mult = number1 * number2;
+    alert(mult);
+};
+const onbuttonDevide = () => {
+
+    let dev = number1 / number2;
+    alert(dev);
+};
+
+buttonPlus.addEventListener("click", onButtonPlus);
+buttonMinus.addEventListener("click", onButtonMinus);
+buttonMultiply.addEventListener("click", onbuttonMultiply);
+buttonDevide.addEventListener("click", onbuttonDevide);

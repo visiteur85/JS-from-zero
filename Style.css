@@ -1,46 +1,72 @@
-img {
-    width: 500px
-}
+/*img {*/
+/*    width: 500px*/
+/*}*/
 
-.JS_color, .HTML_color {
-    color: red;
-    font-size: 25px;
-    border: 1px solid blue
-}
+/*.JS_color, .HTML_color {*/
+/*    color: red;*/
+/*    font-size: 25px;*/
+/*    border: 1px solid blue*/
+/*}*/
 
-hr {
-    border-color: lawngreen;
-}
+/*hr {*/
+/*    border-color: lawngreen;*/
+/*}*/
 
-.homework {
-    color: red;
-    font-size: 32px;
+/*.homework {*/
+/*    color: red;*/
+/*    font-size: 32px;*/
+/*    text-align: center;*/
+/*}*/
+/*.formForRegistration {*/
+/*    border: 1px solid cornflowerblue;*/
+/*    background-color: bisque;*/
+/*    width: 230px;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+
+/*.inputLes9_red {*/
+/*color: red*/
+/*}*/
+
+/*.inputLes9_green {*/
+/*    color: green*/
+/*}*/
+
+/*.buttonStyle {*/
+/*    background-color: yellow;*/
+/*    border: 1px solid red;*/
+/*    padding: 10px;*/
+/*    transform: rotate(45deg);*/
+
+/*}*/
+
+/*.error-input {*/
+/*    border-color: red;*/
+/*}*/
+
+.jskmd-calculator {
+    width:500px;
+   margin: 0 auto;
     text-align: center;
-}
-.formForRegistration {
-    border: 1px solid cornflowerblue;
-    background-color: bisque;
-    width: 230px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    background-color: cadetblue;
+    padding: 20px;
+    border: 1px solid black;
 
-.inputLes9_red {
-color: red
 }
+.operartion-block {}
 
-.inputLes9_green {
-    color: green
-}
-
-.buttonStyle {
-    background-color: yellow;
-    border: 1px solid red;
-    padding: 10px;
-    transform: rotate(45deg);
+.jskmd-calculator .operartion-block button {
+    height: 40px;
+    width: 40px;
+    margin: 20px;
 
 }
 
-.error-input {
-    border-color: red;
+.input-block label {
+    display: block;
+}
+
+.input-block {
+
 }
