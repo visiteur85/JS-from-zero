@@ -248,31 +248,47 @@ let buttonDevide = document.getElementById("buttonDevide");
 let input1 = document.getElementById("number1");
 let input2 = document.getElementById("number2");
 
-let number1 = +input1.value;
-let number2 = +input2.value;
+const getNumber1 = () => {
+    return +input1.value
+}
+const getNumber2 = () => {
+    return +input2.value
+}
+
+const makeOperation = (operationCode) => {
+    if (operationCode === "+") {
+        let result = getNumber1() + getNumber2();
+        alert(result)
+    } else if (operationCode === "-") {
+        let result = getNumber1() - getNumber2();
+        alert(result)
+    } else if (operationCode === "*") {
+        let result = getNumber1() * getNumber2();
+        alert(result);
+    } else if (operationCode === "/") {
+        let result = getNumber1() / getNumber2();
+        alert(result);
+    }
+
+
+}
 
 const onButtonPlus = () => {
-
-    let sum = number1 + number2;
-    alert(sum);
-
+    makeOperation("+")
 };
 
 
 const onButtonMinus = () => {
+    makeOperation("-")
 
-    let minus = number1 - number2;
-    alert(minus);
 };
 const onbuttonMultiply = () => {
-
-    let mult = number1 * number2;
-    alert(mult);
+    makeOperation("*")
 };
+
 const onbuttonDevide = () => {
 
-    let dev = number1 / number2;
-    alert(dev);
+    makeOperation("/")
 };
 
 buttonPlus.addEventListener("click", onButtonPlus);
