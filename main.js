@@ -248,50 +248,51 @@ let buttonDevide = document.getElementById("buttonDevide");
 let input1 = document.getElementById("number1");
 let input2 = document.getElementById("number2");
 
-const getNumber1 = () => {
-    return +input1.value
-}
-const getNumber2 = () => {
-    return +input2.value
-}
+
 
 const makeOperation = (operationCode) => {
+    let number1 = +input1.value;
+    let number2 = +input2.value;
+
     if (operationCode === "+") {
-        let result = getNumber1() + getNumber2();
+        let result = number1 + number2;
         alert(result)
     } else if (operationCode === "-") {
-        let result = getNumber1() - getNumber2();
+        let result = number1 - number2;
         alert(result)
     } else if (operationCode === "*") {
-        let result = getNumber1() * getNumber2();
+        let result = number1 * number2;
         alert(result);
     } else if (operationCode === "/") {
-        let result = getNumber1() / getNumber2();
+        let result = number1 / number2;
         alert(result);
     }
 
 
 }
 
-const onButtonPlus = () => {
-    makeOperation("+")
-};
+// const onButtonPlus = () => {
+//     makeOperation("+")
+// };
+//
+// const onButtonMinus = () => {
+//     makeOperation("-")
+// };
+// const onButtonMultiply = () => {
+//     makeOperation("*")
+// };
+//
+// const onButtonDevide = () => {
+//
+//     makeOperation("/")
+// };
 
-
-const onButtonMinus = () => {
-    makeOperation("-")
-
-};
-const onbuttonMultiply = () => {
-    makeOperation("*")
-};
-
-const onbuttonDevide = () => {
-
-    makeOperation("/")
-};
-
-buttonPlus.addEventListener("click", onButtonPlus);
-buttonMinus.addEventListener("click", onButtonMinus);
-buttonMultiply.addEventListener("click", onbuttonMultiply);
-buttonDevide.addEventListener("click", onbuttonDevide);
+const onOperationButtonClock = (e) => {
+  let click = e.currentTarget;
+  let operation = click.innerHTML;
+  makeOperation(operation)
+}
+buttonPlus.addEventListener("click", onOperationButtonClock);
+buttonMinus.addEventListener("click", onOperationButtonClock);
+buttonMultiply.addEventListener("click", onOperationButtonClock);
+buttonDevide.addEventListener("click", onOperationButtonClock);
