@@ -245,9 +245,10 @@ let buttonMinus = document.getElementById("buttonMinus");
 let buttonMultiply = document.getElementById("buttonMultiply");
 let buttonDevide = document.getElementById("buttonDevide");
 
+const operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
+
 let input1 = document.getElementById("number1");
 let input2 = document.getElementById("number2");
-
 
 
 const makeOperation = (operationCode) => {
@@ -267,32 +268,19 @@ const makeOperation = (operationCode) => {
         let result = number1 / number2;
         alert(result);
     }
-
-
 }
-
-// const onButtonPlus = () => {
-//     makeOperation("+")
-// };
-//
-// const onButtonMinus = () => {
-//     makeOperation("-")
-// };
-// const onButtonMultiply = () => {
-//     makeOperation("*")
-// };
-//
-// const onButtonDevide = () => {
-//
-//     makeOperation("/")
-// };
 
 const onOperationButtonClock = (e) => {
-  let click = e.currentTarget;
-  let operation = click.innerHTML;
-  makeOperation(operation)
+    let click = e.currentTarget;
+    let operation = click.innerHTML;
+    makeOperation(operation)
 }
-buttonPlus.addEventListener("click", onOperationButtonClock);
-buttonMinus.addEventListener("click", onOperationButtonClock);
-buttonMultiply.addEventListener("click", onOperationButtonClock);
-buttonDevide.addEventListener("click", onOperationButtonClock);
+
+for (let i = 0; i < operationButtons.length; i++) {
+    operationButtons[i].addEventListener("click", onOperationButtonClock)
+}
+
+// buttonPlus.addEventListener("click", onOperationButtonClock);
+// buttonMinus.addEventListener("click", onOperationButtonClock);
+// buttonMultiply.addEventListener("click", onOperationButtonClock);
+// buttonDevide.addEventListener("click", onOperationButtonClock);
