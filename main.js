@@ -280,7 +280,68 @@ for (let i = 0; i < operationButtons.length; i++) {
     operationButtons[i].addEventListener("click", onOperationButtonClock)
 }
 
-// buttonPlus.addEventListener("click", onOperationButtonClock);
-// buttonMinus.addEventListener("click", onOperationButtonClock);
-// buttonMultiply.addEventListener("click", onOperationButtonClock);
-// buttonDevide.addEventListener("click", onOperationButtonClock);
+const firstEl = document.getElementById("firstEl");
+const secondEl = document.getElementById("secondEl");
+const thirdEl = document.getElementById("thirdEl");
+
+// const newNameValue = "pavel";
+// const newLastNameValue = "Krivalcevich";
+// const changeValue = (value)=> {
+//     firstEl.value = value;
+//     secondEl.value = value;
+//     thirdEl.value = value;
+// }
+
+// changeValue("google")
+
+// firstEl.className = "error";
+// secondEl.className = "error";
+// thirdEl.className = "error";
+
+
+// const setError = (id)=> {
+//     const el = document.getElementById(id);
+//     el.className = "error"
+// };
+// setError("firstEl")
+// setError("secondEl")
+// setError("thirdEl")
+// setError("asd")
+// setError("qwer")
+
+// const getSumm = (a,b) => {
+//     return a + b
+// }
+// console.log(getSumm(34,23));
+// console.log(getSumm(3434,12));
+// console.log(getSumm(23,23));
+
+// const sayHello = () => {
+//     alert('My name')
+// };
+
+// const timeoutError = () => {
+//     setError("firstEl")
+// }
+// setTimeout(timeoutError,1000);
+
+// const hideElement = (id) => {
+//     let el = document.getElementById(id);
+//     el.className = "hidden"
+// };
+// hideElement("firstEl");
+
+// const showElement = (id) => {
+//     let el = document.getElementById(id);
+//     el.className = "visible"
+// }
+// showElement('firstEl')
+// let i = 0;
+// const seconds = () => {
+//     let el = document.getElementById("firstEl")
+  
+//     i++;
+//     el.value = i;
+// }
+
+// setInterval(seconds,1000)

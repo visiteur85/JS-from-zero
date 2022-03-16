@@ -70,3 +70,16 @@
 .input-block {
 
 }
+
+.error {
+    border: red 1px solid
+}
+
+.hidden {
+    display: none
+}
+
+.visible {
+    display:block;
+    border: red 1px solid
+}
