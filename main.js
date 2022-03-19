@@ -240,49 +240,6 @@
 
 //les 15
 
-let buttonPlus = document.getElementById("buttonPlus");
-let buttonMinus = document.getElementById("buttonMinus");
-let buttonMultiply = document.getElementById("buttonMultiply");
-let buttonDevide = document.getElementById("buttonDevide");
-
-const operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
-
-let input1 = document.getElementById("number1");
-let input2 = document.getElementById("number2");
-
-
-const makeOperation = (operationCode) => {
-    let number1 = +input1.value;
-    let number2 = +input2.value;
-
-    if (operationCode === "+") {
-        let result = number1 + number2;
-        alert(result)
-    } else if (operationCode === "-") {
-        let result = number1 - number2;
-        alert(result)
-    } else if (operationCode === "*") {
-        let result = number1 * number2;
-        alert(result);
-    } else if (operationCode === "/") {
-        let result = number1 / number2;
-        alert(result);
-    }
-}
-
-const onOperationButtonClock = (e) => {
-    let click = e.currentTarget;
-    let operation = click.innerHTML;
-    makeOperation(operation)
-}
-
-for (let i = 0; i < operationButtons.length; i++) {
-    operationButtons[i].addEventListener("click", onOperationButtonClock)
-}
-
-const firstEl = document.getElementById("firstEl");
-const secondEl = document.getElementById("secondEl");
-const thirdEl = document.getElementById("thirdEl");
 
 // const newNameValue = "pavel";
 // const newLastNameValue = "Krivalcevich";
@@ -345,3 +302,110 @@ const thirdEl = document.getElementById("thirdEl");
 // }
 
 // setInterval(seconds,1000)
+
+
+//___________________________homewoerk 10-3____________________________
+// const findAndremove = (id) => {
+//     let el = document.getElementById(id)
+//     if (el !== null) {
+//     el.remove()}
+// };
+// findAndremove("inputID");
+
+// const findTwoParametrs = (id, clas) => {
+// let el = document.getElementById(id);
+// el.className = clas
+
+
+// }
+
+// findTwoParametrs("inputID",  "inputclass")
+// const decreseEl = (id, clas) => {
+//     let el = document.getElementById(id);
+// const ss = (clas) => {
+//     el.className = clas
+// }
+// setTimeout(ss, 5000)
+//     // el.className = clas
+// };
+
+// decreseEl("divdiv", "divdivone")
+
+// let first = document.getElementById("1");
+// let second = document.getElementById("2");
+// let third = document.getElementById("3");
+
+// const arr = [first, second, third  ];
+// const delEl = (valueForDelete) => {
+// arr.map(m=> m.value == valueForDelete ? m.className = "divdiv" : m)
+// }
+
+// delEl(2);
+// delEl(3)
+
+// let first = document.getElementById("1");
+// let second = document.getElementById("2");
+// let third = document.getElementById("3");
+// const arr = [first, second, third  ];
+
+
+// // const delClass = (num) => {
+    
+// //     num.map(m=> m.className === "hey" ? m.remove() : m) 
+// // };
+// // delClass(arr);
+
+// const hasClassHey = (el) => {
+//     if (el.className === "hey") 
+//     {return true;}
+//     else {return false};
+// }
+
+// removeElementIfConditionsTrue = (elements, predicate ) => {
+//     elements.map(m=> predicate(m) ? m.remove() : m )
+// }
+
+// removeElementIfConditionsTrue(arr, hasClassHey )
+let buttonPlus = document.getElementById("buttonPlus");
+let buttonMinus = document.getElementById("buttonMinus");
+let buttonMultiply = document.getElementById("buttonMultiply");
+let buttonDevide = document.getElementById("buttonDevide");
+
+const operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
+
+let input1 = document.getElementById("number1");
+let input2 = document.getElementById("number2");
+
+
+const makeOperation = (operationCode) => {
+    let number1 = +input1.value;
+    let number2 = +input2.value;
+
+    if (operationCode === "+") {
+        let result = number1 + number2;
+        alert(result)
+    } else if (operationCode === "-") {
+        let result = number1 - number2;
+        alert(result)
+    } else if (operationCode === "*") {
+        let result = number1 * number2;
+        alert(result);
+    } else if (operationCode === "/") {
+        let result = number1 / number2;
+        alert(result);
+    }
+}
+
+const onOperationButtonClock = (e) => {
+    let click = e.currentTarget;
+    let operation = click.innerHTML;
+    makeOperation(operation)
+}
+
+for (let i = 0; i < operationButtons.length; i++) {
+    operationButtons[i].addEventListener("click", onOperationButtonClock)
+}
+
+const firstEl = document.getElementById("firstEl");
+const secondEl = document.getElementById("secondEl");
+const thirdEl = document.getElementById("thirdEl");
