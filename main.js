@@ -366,6 +366,75 @@
 // }
 
 // removeElementIfConditionsTrue(arr, hasClassHey )
+
+
+// const h2 = () => {
+//     let el = document.getElementById("h2");
+//     el.remove()
+// }
+
+// let button = document.getElementById("del");
+// button.addEventListener("click", h2)
+//-------------------------------------------------------
+//Homework 14
+// const task1 = () => {
+// let el = document.getElementById("task14-1");
+// el.type = "text"
+// }
+// const task2 = () => {
+//     let el = document.getElementById("task14-1");
+//     el.type = "password"
+//     }
+
+
+
+// let el = document.getElementById("task14-11");
+// el.addEventListener("mousedown", task1);
+
+// el.addEventListener("mouseup", task2);
+
+// let elSpan = document.getElementById("span2");
+// let elInput = document.getElementById("task14-1");
+// let elButton = document.getElementById("button");
+
+
+
+// const tuchSpan = ()=> {
+//      elSpan.className = "inVisible14";
+//      elInput.className = "visible14";
+//      elButton.className = "visible14";
+
+// };
+// elSpan.addEventListener("click", tuchSpan);
+
+
+// const saveMe = () => {
+//     let inputValue = elInput.value;
+//     elSpan.innerHTML = inputValue;
+//     elSpan.className = "visible14";
+//     elInput.className = "inVisible14";
+//      elButton.className = "inVisible14";
+
+// }
+// elButton.addEventListener("click", saveMe )
+
+// const elButton = document.getElementById("button14");
+// const elinput1 = document.getElementById("input141");
+// const elinput2 = document.getElementById("input142");
+
+
+// const changeMe = () => {
+// const valueOfInputOne = elinput1.value;
+// const valueOfInputTwo = elinput2.value;
+// elinput1.value = valueOfInputTwo;
+// elinput2.value = valueOfInputOne
+
+
+
+// }
+
+// elButton.addEventListener("click", changeMe)
+
 let buttonPlus = document.getElementById("buttonPlus");
 let buttonMinus = document.getElementById("buttonMinus");
 let buttonMultiply = document.getElementById("buttonMultiply");
@@ -409,3 +478,6 @@ for (let i = 0; i < operationButtons.length; i++) {
 const firstEl = document.getElementById("firstEl");
 const secondEl = document.getElementById("secondEl");
 const thirdEl = document.getElementById("thirdEl");
+
+
+

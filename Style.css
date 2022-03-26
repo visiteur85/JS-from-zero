@@ -108,3 +108,13 @@ transition-duration: 4s;
     display:block;
     border: red 1px solid
 }
+
+/* __________________________________________________ */
+
+.visible14 {
+    display:block
+}
+
+.inVisible14 {
+    display: none;
+}
