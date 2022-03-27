@@ -435,12 +435,14 @@
 
 // elButton.addEventListener("click", changeMe)
 
-let buttonPlus = document.getElementById("buttonPlus");
-let buttonMinus = document.getElementById("buttonMinus");
-let buttonMultiply = document.getElementById("buttonMultiply");
-let buttonDevide = document.getElementById("buttonDevide");
+// let buttonPlus = document.getElementById("buttonPlus");
+// let buttonMinus = document.getElementById("buttonMinus");
+// let buttonMultiply = document.getElementById("buttonMultiply");
+// let buttonDevide = document.getElementById("buttonDevide");
 
-const operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
+// const operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
+const operationButtons  = document.getElementsByClassName("operation-button");
+
 
 let input1 = document.getElementById("number1");
 let input2 = document.getElementById("number2");
@@ -474,10 +476,10 @@ const onOperationButtonClock = (e) => {
 for (let i = 0; i < operationButtons.length; i++) {
     operationButtons[i].addEventListener("click", onOperationButtonClock)
 }
-
-const firstEl = document.getElementById("firstEl");
-const secondEl = document.getElementById("secondEl");
-const thirdEl = document.getElementById("thirdEl");
+//
+// const firstEl = document.getElementById("firstEl");
+// const secondEl = document.getElementById("secondEl");
+// const thirdEl = document.getElementById("thirdEl");
 
 
 
