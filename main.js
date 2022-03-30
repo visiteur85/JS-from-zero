@@ -296,7 +296,7 @@
 // let i = 0;
 // const seconds = () => {
 //     let el = document.getElementById("firstEl")
-  
+
 //     i++;
 //     el.value = i;
 // }
@@ -350,7 +350,7 @@
 
 
 // // const delClass = (num) => {
-    
+
 // //     num.map(m=> m.className === "hey" ? m.remove() : m) 
 // // };
 // // delClass(arr);
@@ -387,7 +387,6 @@
 //     }
 
 
-
 // let el = document.getElementById("task14-11");
 // el.addEventListener("mousedown", task1);
 
@@ -396,7 +395,6 @@
 // let elSpan = document.getElementById("span2");
 // let elInput = document.getElementById("task14-1");
 // let elButton = document.getElementById("button");
-
 
 
 // const tuchSpan = ()=> {
@@ -430,7 +428,6 @@
 // elinput2.value = valueOfInputOne
 
 
-
 // }
 
 // elButton.addEventListener("click", changeMe)
@@ -441,7 +438,14 @@
 // let buttonDevide = document.getElementById("buttonDevide");
 
 // const operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
-const operationButtons  = document.getElementsByClassName("operation-button");
+
+//
+// const firstEl = document.getElementById("firstEl");
+// const secondEl = document.getElementById("secondEl");
+// const thirdEl = document.getElementById("thirdEl");
+
+// ----------------------------------------------------calculator_______________________________________
+const operationButtons = document.getElementsByClassName("operation-button");
 
 
 let input1 = document.getElementById("number1");
@@ -476,10 +480,52 @@ const onOperationButtonClock = (e) => {
 for (let i = 0; i < operationButtons.length; i++) {
     operationButtons[i].addEventListener("click", onOperationButtonClock)
 }
-//
-// const firstEl = document.getElementById("firstEl");
-// const secondEl = document.getElementById("secondEl");
-// const thirdEl = document.getElementById("thirdEl");
+
+// ---------------------------------------------------slider_______________________________________
+const showPrevBtn = document.getElementById("showPrev");
+const showNextBtn = document.getElementById("showNext");
+const sliderImage = document.getElementById("sliderImage")
+
+
+const arrSlider = [];
+
+arrSlider.push("https://htstatic.imgsmail.ru/pic_image/45ad9a435cc6bf88035d161dcc7f5679/840/473/1670326/");
+arrSlider.push("https://news.liga.net/images/general/2021/11/17/thumbnail-tw-20211117200528-6313.jpg?v=1637174346");
+arrSlider.push("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQwjYA7SCo-huKmFUfqQ7qn_pZaVLXTlk5TJKGtqSKk-Zg7qv3lQjLpQzfguat1zlXpMY&usqp=CAU");
+arrSlider.push("https://rossaprimavera.ru/static/files/6f9705ebd098.jpg");
+
+
+let currentImage = 0;
+
+sliderImage.src = arrSlider[currentImage];
+showPrevBtn.disabled = true
+
+
+const onShowPrevClick = () => {
+
+    currentImage--
+    sliderImage.src = arrSlider[currentImage];
+    if (currentImage === 0) {
+        showPrevBtn.disabled = true
+    }
+    showNextBtn.disabled = false
+};
+
+const onNextPrevClick = () => {
+    currentImage++;
+    sliderImage.src = arrSlider[currentImage];
+    showPrevBtn.disabled = false
+    if (currentImage === (arrSlider.length-1))
+    {showNextBtn.disabled = true}
+
+};
+showPrevBtn.addEventListener("click", onShowPrevClick);
+showNextBtn.addEventListener("click", onNextPrevClick);
+
+
+
+
+
 
 
 

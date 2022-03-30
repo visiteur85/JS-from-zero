@@ -68,18 +68,18 @@ transition-duration: 4s;
 } */
 
 
-
-
 .jskmd-calculator {
-    width:500px;
-   margin: 0 auto;
+    width: 500px;
+    margin: 0 auto;
     text-align: center;
     background-color: cadetblue;
     padding: 20px;
     border: 1px solid black;
 
 }
-.operartion-block {}
+
+.operartion-block {
+}
 
 .jskmd-calculator .operartion-block button {
     height: 40px;
@@ -105,16 +105,28 @@ transition-duration: 4s;
 }
 
 .visible {
-    display:block;
+    display: block;
     border: red 1px solid
 }
 
 /* __________________________________________________ */
 
 .visible14 {
-    display:block
+    display: block
 }
 
 .inVisible14 {
     display: none;
+}
+
+/*___________________________________slider*/
+.it-slider {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.it-slider img {
+width: 200px;
+    height: 150px;
 }
