@@ -444,6 +444,66 @@
 // const secondEl = document.getElementById("secondEl");
 // const thirdEl = document.getElementById("thirdEl");
 
+
+
+// ---------------------------------------------------slider_______________________________________
+// const imagesUrls = [];
+
+// const showPrevBtn = document.getElementById("showPrev");
+// const showNextBtn = document.getElementById("showNext");
+// const sliderImage = document.getElementById("sliderImage")
+
+
+
+
+// imagesUrls.push("https://htstatic.imgsmail.ru/pic_image/45ad9a435cc6bf88035d161dcc7f5679/840/473/1670326/");
+// imagesUrls.push("https://news.liga.net/images/general/2021/11/17/thumbnail-tw-20211117200528-6313.jpg?v=1637174346");
+// imagesUrls.push("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQwjYA7SCo-huKmFUfqQ7qn_pZaVLXTlk5TJKGtqSKk-Zg7qv3lQjLpQzfguat1zlXpMY&usqp=CAU");
+// imagesUrls.push("https://rossaprimavera.ru/static/files/6f9705ebd098.jpg");
+
+
+// let currentImage = 0;
+
+// sliderImage.src = imagesUrls[currentImage];
+// showPrevBtn.disabled = true
+
+
+// const onShowPrevClick = (event) => {
+
+//     currentImage--
+//     sliderImage.src = imagesUrls[currentImage];
+//     if (currentImage === 0) {
+//         showPrevBtn.disabled = true
+//     }
+//     showNextBtn.disabled = false
+// };
+
+// const onNextPrevClick = (event) => {
+//     currentImage++;
+//     sliderImage.src = imagesUrls[currentImage];
+//     showPrevBtn.disabled = false
+//     if (currentImage === (imagesUrls.length-1))
+//     {showNextBtn.disabled = true}
+
+// };
+// showPrevBtn.addEventListener("click", onShowPrevClick);
+// showNextBtn.addEventListener("click", onNextPrevClick);
+// // ---------------------------------------------------objects_______________________________________
+
+// var car1 = {
+//     name: "Reno Stepway",
+//     isTurnOn: false,
+//     speed: 0,
+//     engine: {
+//         v: 1.6,
+//         horses: 120,
+//     },
+//     start:function(){
+//          this.isTurnOn = true;
+//         this.speed = 10
+//     }
+// };
+// car1.start()
 // ----------------------------------------------------calculator_______________________________________
 const operationButtons = document.getElementsByClassName("operation-button");
 
@@ -480,67 +540,7 @@ const onOperationButtonClock = (e) => {
 for (let i = 0; i < operationButtons.length; i++) {
     operationButtons[i].addEventListener("click", onOperationButtonClock)
 }
-
-// ---------------------------------------------------slider_______________________________________
-const showPrevBtn = document.getElementById("showPrev");
-const showNextBtn = document.getElementById("showNext");
-const sliderImage = document.getElementById("sliderImage")
-
-
-const arrSlider = [];
-
-arrSlider.push("https://htstatic.imgsmail.ru/pic_image/45ad9a435cc6bf88035d161dcc7f5679/840/473/1670326/");
-arrSlider.push("https://news.liga.net/images/general/2021/11/17/thumbnail-tw-20211117200528-6313.jpg?v=1637174346");
-arrSlider.push("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQwjYA7SCo-huKmFUfqQ7qn_pZaVLXTlk5TJKGtqSKk-Zg7qv3lQjLpQzfguat1zlXpMY&usqp=CAU");
-arrSlider.push("https://rossaprimavera.ru/static/files/6f9705ebd098.jpg");
-
-
-let currentImage = 0;
-
-sliderImage.src = arrSlider[currentImage];
-showPrevBtn.disabled = true
-
-
-const onShowPrevClick = () => {
-
-    currentImage--
-    sliderImage.src = arrSlider[currentImage];
-    if (currentImage === 0) {
-        showPrevBtn.disabled = true
-    }
-    showNextBtn.disabled = false
-};
-
-const onNextPrevClick = () => {
-    currentImage++;
-    sliderImage.src = arrSlider[currentImage];
-    showPrevBtn.disabled = false
-    if (currentImage === (arrSlider.length-1))
-    {showNextBtn.disabled = true}
-
-};
-showPrevBtn.addEventListener("click", onShowPrevClick);
-showNextBtn.addEventListener("click", onNextPrevClick);
-// ---------------------------------------------------objects_______________________________________
-
-var car1 = {
-    name: "Reno Stepway",
-    isTurnOn: false,
-    speed: 0,
-    engine: {
-        v: 1.6,
-        horses: 120,
-    },
-    start:function(){
-         this.isTurnOn = true;
-        this.speed = 10
-    }
-};
-car1.start()
-alert( car1.speed)
-
-
-
+slider.start();
 
 
 
