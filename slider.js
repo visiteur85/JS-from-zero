@@ -6,9 +6,16 @@ let slider = {
     currentImage: 0,
     start: function () {
 
+        const that = this;
+
         //подписка на событие
-        this.showPrevBtn.addEventListener("click", this.onShowPrevClick);
-        this.showNextBtn.addEventListener("click", this.onNextPrevClick);
+        this.showPrevBtn.addEventListener("click", function (e) {
+            that.onShowPrevClick(e)
+        });
+
+        this.showNextBtn.addEventListener("click", function (e) {
+            that.onNextPrevClick(e)
+        });
 
         // создаем массив картинок
         this.imagesUrls.push("https://htstatic.imgsmail.ru/pic_image/45ad9a435cc6bf88035d161dcc7f5679/840/473/1670326/");

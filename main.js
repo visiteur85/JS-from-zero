@@ -540,6 +540,7 @@ const onOperationButtonClock = (e) => {
 for (let i = 0; i < operationButtons.length; i++) {
     operationButtons[i].addEventListener("click", onOperationButtonClock)
 }
+//-----------------------------------------------------------
 slider.start();
 
 
