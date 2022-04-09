@@ -558,7 +558,7 @@ class Team {
 
         this.teamName = nameOfTeam;
         this.action = function () {
-            alert(`${this.teamName} champion`);
+            console.log(`${this.teamName} champion`);
         };
 
     }
