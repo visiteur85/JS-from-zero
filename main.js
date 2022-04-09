@@ -540,7 +540,7 @@ const onOperationButtonClock = (e) => {
 for (let i = 0; i < operationButtons.length; i++) {
     operationButtons[i].addEventListener("click", onOperationButtonClock)
 }
-//------------------------slider
+//============================================slider=====================================================
 
 
 let slider1 = sliderFactory.createNewSlider();
@@ -549,6 +549,20 @@ let slider2 = sliderFactory.createNewSlider()
 slider1.start("itk-slider1");
 slider2.start("itk-slider2");
 
+//_____________________________the end Slider_____________________________________________________________
 
+//====================================Constructor=========================================================
 
+class Team {
+    constructor(nameOfTeam) {
 
+        this.teamName = nameOfTeam;
+        this.action = function () {
+            alert(`${this.teamName} champion`);
+        };
+
+    }
+}
+
+let newTeam = new Team("MU");
+newTeam.action()
