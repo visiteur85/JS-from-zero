@@ -543,8 +543,8 @@ for (let i = 0; i < operationButtons.length; i++) {
 //============================================slider=====================================================
 
 
-let slider1 = sliderFactory.createNewSlider();
-let slider2 = sliderFactory.createNewSlider()
+let slider1 = new Slider();
+let slider2 = new Slider();
 
 slider1.start("itk-slider1");
 slider2.start("itk-slider2");
