@@ -566,3 +566,37 @@ class Team {
 
 let newTeam = new Team("MU");
 newTeam.action()
+
+//________________________________Prototipe__________________________
+class Car {
+ 
+    constructor(name) {
+        this.name = name;
+        this.isTurnOn = false;
+        this.speed = 0;
+        this.engine = {
+            v: 1.6,
+            horses: 120,
+        };
+        //удалили start отсюда!!!!!!!!!!
+    }
+};
+//к прототипу приходтся цеплять только методы
+Car.prototype.start = function () {
+    
+    this.isTurnOn = true;
+    this.speed = 10;
+    console.log(this.name)
+};
+
+let reno = new Car("Reno");
+reno.start()
+
+let mers = new Car("Mers");
+mers.start()
+
+console.log(Car)
+
+
+
+
