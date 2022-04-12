@@ -641,3 +641,12 @@ mers.start()
 console.log(Car)
 
 
+//homework 4
+
+// let arr4 = [2, 4, 6];
+// let multip = 1;
+// for (let i = 0; i < arr4.length; i++)
+// {
+// multip = multip * arr4[i];
+// }
+// console.log(multip)
