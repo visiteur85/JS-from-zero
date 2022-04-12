@@ -504,6 +504,49 @@
 //     }
 // };
 // car1.start()
+//_____________________________________________homework 10-3------------------------------------------------
+//part 1
+// function getArraySum (arr, callback) {
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++)
+// {sum = sum + arr[i]};
+// callback(sum);
+// }
+
+// function alertResult (num) {
+//     alert(num)
+// }
+
+// let arr = [1, 2, 3];
+// getArraySum(arr, alertResult )
+//part 2
+// function getArraySum (arr, callback) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++)
+//     {sum = sum + arr[i]};
+//     callback(sum);
+//     }
+    
+//     function alertResult (num) {
+//         console.log(num)
+//     }
+    
+//     let arr = [1, 2, 3];
+//     getArraySum(arr, alertResult )
+//part 3
+// function getConcreteFunctionByName(name) {    
+//     switch(name) {
+//         case "deleter":
+//         alert("delete")
+//         return
+//         case "hhh":
+//             alert("hhh")
+//             return
+//     }
+//     };
+//     let asdf = getConcreteFunctionByName("hhh");
+//     asdf()
+  
 // ----------------------------------------------------calculator_______________________________________
 const operationButtons = document.getElementsByClassName("operation-button");
 
@@ -596,7 +639,5 @@ let mers = new Car("Mers");
 mers.start()
 
 console.log(Car)
-
-
 
 
