@@ -546,6 +546,63 @@
 //     };
 //     let asdf = getConcreteFunctionByName("hhh");
 //     asdf()
+//homework 4
+
+// let arr4 = [2, 4, 6];
+// let multip = 1;
+// for (let i = 0; i < arr4.length; i++)
+// {
+// multip = multip * arr4[i];
+// }
+// console.log(multip)
+//---------------------------------------------каррирование, замыкание и рекурсия
+// function aaa (a) {
+//     return function (b) {
+//         return function (c) {
+//             return a + b + c
+//         }
+//     }
+//     };
+    
+//     alert(aaa(3)(6) (9))
+
+// Task 02
+// Реализовать функцию makeCounter которая работает следующим образом:
+// const counter = makeCounter();
+// counter(); // 1
+// counter(); // 2
+// const counter2 = makeCounter();
+// counter2(); // 1
+// counter(); // 3
+
+// function makeCounter (count) {
+//     count = 0;
+//     return function () {
+//          return ++count 
+//     }
+// }
+// const counter = makeCounter();
+// console.log(counter()); // 1
+// console.log(counter()); // 2
+
+// const counter2 = makeCounter();
+
+// console.log(counter2())
+// console.log(counter());
+
+// Task 03
+// Переписать функцию из Task 02 так, что бы она принимала число в качестве аргумента и это число было стартовым значением счетчика
+// и возвращала следующий объект методов:
+// increase: +1
+// decrease: -1
+// reset: установить счетчик в 0;
+// set: установить счетчик в заданное значение;
+
+
+
+ 
+ 
+
   
 // ----------------------------------------------------calculator_______________________________________
 const operationButtons = document.getElementsByClassName("operation-button");
@@ -641,12 +698,3 @@ mers.start()
 console.log(Car)
 
 
-//homework 4
-
-// let arr4 = [2, 4, 6];
-// let multip = 1;
-// for (let i = 0; i < arr4.length; i++)
-// {
-// multip = multip * arr4[i];
-// }
-// console.log(multip)
