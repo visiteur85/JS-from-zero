@@ -555,6 +555,19 @@
 // multip = multip * arr4[i];
 // }
 // console.log(multip)
+//____________________________promise
+// let promise = new Promise ((res, rej) => {
+//     let a = {};
+//     function incr() {
+//          a.name = "pavel";
+//          return a
+         
+       
+//     }
+//     incr()
+//     setTimeout(()=> res(a), 3000)
+// });
+// promise.then(res=>console.log(res))
 //---------------------------------------------каррирование, замыкание и рекурсия
 // function aaa (a) {
 //     return function (b) {
@@ -597,12 +610,14 @@
 // decrease: -1
 // reset: установить счетчик в 0;
 // set: установить счетчик в заданное значение;
-
-
-
- 
- 
-
+var arr = [];
+function decisionForAndrey(obj) {
+    for (var key in obj) 
+          {arr.push(key);
+     decisionForAndrey(obj[key])}
+     
+     }
+      
   
 // ----------------------------------------------------calculator_______________________________________
 const operationButtons = document.getElementsByClassName("operation-button");
@@ -696,5 +711,6 @@ let mers = new Car("Mers");
 mers.start()
 
 console.log(Car)
+
 
 
