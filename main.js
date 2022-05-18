@@ -445,15 +445,12 @@
 // const thirdEl = document.getElementById("thirdEl");
 
 
-
 // ---------------------------------------------------slider_______________________________________
 // const imagesUrls = [];
 
 // const showPrevBtn = document.getElementById("showPrev");
 // const showNextBtn = document.getElementById("showNext");
 // const sliderImage = document.getElementById("sliderImage")
-
-
 
 
 // imagesUrls.push("https://htstatic.imgsmail.ru/pic_image/45ad9a435cc6bf88035d161dcc7f5679/840/473/1670326/");
@@ -526,11 +523,11 @@
 //     {sum = sum + arr[i]};
 //     callback(sum);
 //     }
-    
+
 //     function alertResult (num) {
 //         console.log(num)
 //     }
-    
+
 //     let arr = [1, 2, 3];
 //     getArraySum(arr, alertResult )
 //part 3
@@ -561,8 +558,8 @@
 //     function incr() {
 //          a.name = "pavel";
 //          return a
-         
-       
+
+
 //     }
 //     incr()
 //     setTimeout(()=> res(a), 3000)
@@ -576,7 +573,7 @@
 //         }
 //     }
 //     };
-    
+
 //     alert(aaa(3)(6) (9))
 
 // Task 02
@@ -610,15 +607,30 @@
 // decrease: -1
 // reset: установить счетчик в 0;
 // set: установить счетчик в заданное значение;
+//homWork 14-5
+// let thumbnails = document.querySelectorAll('.thumbnails img');
+// let fullSizeImg = document.getElementById('full-size-img');
+// let showFullSizeImage = function () {
+//     console.log(this)
+//     fullSizeImg.src = this.dataset.srcFull;
+// }
+//
+//
+// for (let i = 0; i < thumbnails.length; i++) {
+//
+//     thumbnails[i].addEventListener('click', showFullSizeImage);
+// }
 var arr = [];
+
 function decisionForAndrey(obj) {
-    for (var key in obj) 
-          {arr.push(key);
-     decisionForAndrey(obj[key])}
-     
-     }
-      
-  
+    for (var key in obj) {
+        arr.push(key);
+        decisionForAndrey(obj[key])
+    }
+
+}
+
+
 // ----------------------------------------------------calculator_______________________________________
 const operationButtons = document.getElementsByClassName("operation-button");
 
@@ -684,7 +696,7 @@ newTeam.action()
 
 //________________________________Prototipe__________________________
 class Car {
- 
+
     constructor(name) {
         this.name = name;
         this.isTurnOn = false;
@@ -698,7 +710,7 @@ class Car {
 };
 //к прототипу приходтся цеплять только методы
 Car.prototype.start = function () {
-    
+
     this.isTurnOn = true;
     this.speed = 10;
     console.log(this.name)
@@ -711,6 +723,5 @@ let mers = new Car("Mers");
 mers.start()
 
 console.log(Car)
-
 
 
