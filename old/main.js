@@ -658,6 +658,7 @@ function toggleMenu(e) {
     }
     e.currentTarget.closest('.main-menu-item').classList.add('show');
 }
+
 var arr = [];
 
 function decisionForAndrey(obj) {
@@ -761,4 +762,19 @@ let mers = new Car("Mers");
 mers.start()
 
 console.log(Car)
+
+// 20 подготовка
+
+const sum = (a, b) => {
+    return a + b
+}
+const multiply = (a, b) => {
+    return a * b
+}
+const minus = (a, b) => {
+    return a - b
+}
+const divide = (a, b) => {
+    return a / b
+}
 
