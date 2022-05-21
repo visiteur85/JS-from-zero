@@ -620,6 +620,24 @@
 //
 //     thumbnails[i].addEventListener('click', showFullSizeImage);
 // }
+//------------------------------14-10----------------------------
+
+
+
+let menuItemsLabelArr = document.querySelectorAll('.main-menu-item span');
+let menuItemsArr = document.querySelectorAll('.main-menu-item');
+
+for (let i = 0; i < menuItemsLabelArr.length; i++) {
+    menuItemsLabelArr[i].addEventListener('click', toggleMenu);
+}
+
+//FUNCTIONS
+function toggleMenu(e) {
+    for (let i = 0; i < menuItemsArr.length; i++) {
+        menuItemsArr[i].classList.remove('show');
+    }
+    e.currentTarget.closest('.main-menu-item').classList.add('show');
+}
 var arr = [];
 
 function decisionForAndrey(obj) {
@@ -723,7 +741,4 @@ let mers = new Car("Mers");
 mers.start()
 
 console.log(Car)
-
-//------------------------------14-6----------------------------
-
 
