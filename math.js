@@ -42,8 +42,8 @@ let resultOfOperation = (math) => {
     }
 }
 
-const operation = (even) => {
-    let button = even.currentTarget;
+const operation = (event) => {
+    let button = event.currentTarget;
     let buttonValue = button.innerText
     resultOfOperation(buttonValue)
 
